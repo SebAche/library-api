@@ -1,0 +1,25 @@
+api_platform:
+
+    # The title of the API.
+    title: 'Library API'
+
+    # The description of the API.
+    description: 'To manage my personal book collection'
+
+    # The version of the API.
+    version: '1.0.0'
+
+    # Set this to false if you want Webby to disappear.
+    show_webby: false
+
+    mapping:
+        # The list of paths with files or directories where the bundle will look for additional resource files.
+        paths: ['%kernel.project_dir%/src/Entity']
+
+    # The list of enabled patch formats. The first one will be the default.
+    patch_formats:
+        json: ['application/merge-patch+json']
+
+    swagger:
+        # The active versions of OpenAPI to be exported or used in the swagger_ui. The first value is the default.
+        versions: [3]
