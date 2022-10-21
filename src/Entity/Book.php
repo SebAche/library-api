@@ -24,7 +24,7 @@ class Book
     #[ORM\Column(nullable: true)]
     private ?int $pages = null;
 
-    #[ORM\ManyToOne(inversedBy: 'books')]
+    #[ORM\ManyToOne(targetEntity: Language::class)]
     private ?Language $language = null;
 
     #[ORM\ManyToMany(targetEntity: Author::class, inversedBy: 'books')]
